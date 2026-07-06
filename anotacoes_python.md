@@ -55,3 +55,5 @@ if y >= 5000:
     print("Você ganha acima da média brasileira.")
 else:
     print("Continue estudando. Seu potencial é muito maior.")
+    ___________
+    prox
