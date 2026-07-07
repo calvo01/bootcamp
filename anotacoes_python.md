@@ -56,4 +56,18 @@ if y >= 5000:
 else:
     print("Continue estudando. Seu potencial é muito maior.")
     ___________
-    prox
+    
+
+saldo = int(input("Qual seu saldo?"))
+saque = int(input("Quanto deseja sacar?"))
+
+
+if saque > saldo:
+    print("Saldo Insulficiente")
+else:
+    print("Saque concluido")
+
+saldo = saldo-saque
+
+
+    print(f"Seu saldo é de {saldo_final}")
