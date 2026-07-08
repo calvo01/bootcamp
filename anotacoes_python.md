@@ -71,3 +71,47 @@ saldo = saldo-saque
 
 
     print(f"Seu saldo é de {saldo}")
+
+
+
+
+    ___________
+
+user = input("Qual o nome do Usário?").lower()
+password = input("Qual a senha do Usário?")
+
+if (user == "felipe") and (password == "python123"):
+    print(f"Bem-vindo, {user}!")
+else:
+    print("Senha e login invalido")
+
+
+    ___________________
+
+peso = float(input("Qual seu peso?"))
+altura = float(input("Qual sua altura?"))
+imc = peso / (altura * altura)
+
+if imc < 18.5:
+    print("Abaixo do peso")
+elif imc >= 18.5 and imc <= 24.9:
+    print("Peso normal")
+elif imc >=25 and imc <= 29.9:
+    print("Acima do peso")
+else:
+    print("Obeso")
+
+print(f"Seu IMC é {imc}")
+
+
+
+____________
+
+name = input("Qual seu nome?")
+valor = float(input("Qual valor da compra"))
+
+if valor >= 100.00:
+    print(f" Olá, {name} o valor da sua compra era de {valor} porem com o desconto de {valor * 0.10}, sua compra ficou em {valor * 0.90}" )
+else:
+    print(f"Olá {name}, o valor da sua compra ficou no valor de {valor}, você não recebeu desconto")
+
