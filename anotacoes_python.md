@@ -115,3 +115,20 @@ if valor >= 100.00:
 else:
     print(f"Olá {name}, o valor da sua compra ficou no valor de {valor}, você não recebeu desconto")
 
+___________
+
+contador = 1
+
+while contador <= 5:
+    print(contador)
+    contador = contador + 1
+    
+_________
+
+contador = 1
+limite = int(input("Até qual número deseja contar?"))
+
+while contador <= limite:
+    print(contador)
+    contador = contador + 1
+
