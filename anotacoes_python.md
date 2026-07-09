@@ -132,3 +132,34 @@ while contador <= limite:
     print(contador)
     contador = contador + 1
 
+__________________
+
+senha = input("Qual a senha")
+
+while senha != "fefe":
+    print("senha incorreta")
+    senha = input("Qual a senha")
+    print("senha correta")
+
+____________________________
+contador = 5
+
+while contador >=0:
+    print(contador)
+    contador  = contador - 1 
+    --
+
+    --------------
+
+    for numero in range(2, 12, 2):
+   print(numero)
+   ___________________________
+   for numero in range(10, 0, -2):
+   print(numero)
+   ______________________
+   numero = int(input("digite um numero"))
+
+for contador in range(1, 11):
+    print(f"{numero} X {contador} = {numero*contador}")
+
+_______________________________
