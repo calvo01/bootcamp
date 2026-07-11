@@ -164,25 +164,11 @@ for contador in range(1, 11):
 
 _______________________________
 
-opcao = int(input("""
-==== MERCADO ====
+total = 0  
 
-1 - Comprar
-2 - Ver total
-3 - Sair
-
-Escolha: """))
-if opcao == 1:
-    print("Comprar")
-
-elif opcao == 2:
-    print("Ver total")
-
-elif opcao == 3:
-    print("Programa encerrado")
-
+opcao = 0 
 while opcao != 3:
-    print("Menu")
+
     opcao = int(input("""
 ==== MERCADO ====
 
@@ -191,8 +177,23 @@ while opcao != 3:
 3 - Sair
 
 Escolha: """))
-   
-    
+
+    if opcao == 1:
+        valor = float(input("Quanto custou? "))
+        total = total + valor
+        print("Compra adicionada!")
+
+    elif opcao == 2:
+        print(f"Total da compra: R$ {total:.2f}")
+
+    elif opcao == 3:
+        print("Programa encerrado!")
+
+    else:
+        print("Opção inválida.")
+
++++++++++
+
 
 
     
