@@ -163,3 +163,36 @@ for contador in range(1, 11):
     print(f"{numero} X {contador} = {numero*contador}")
 
 _______________________________
+
+opcao = int(input("""
+==== MERCADO ====
+
+1 - Comprar
+2 - Ver total
+3 - Sair
+
+Escolha: """))
+if opcao == 1:
+    print("Comprar")
+
+elif opcao == 2:
+    print("Ver total")
+
+elif opcao == 3:
+    print("Programa encerrado")
+
+while opcao != 3:
+    print("Menu")
+    opcao = int(input("""
+==== MERCADO ====
+
+1 - Comprar
+2 - Ver total
+3 - Sair
+
+Escolha: """))
+   
+    
+
+
+    
