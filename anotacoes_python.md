@@ -194,6 +194,36 @@ Escolha: """))
 
 ______________________
 
+saldo = 1000
+saque = 0 
+deposito = 0
+opcao = 0
+    
+    
+while opcao != 5:
+    opcao = int(input("1-saldo,2-deposito,3-saque,4-extrato,5-sair"))
+    if opcao == 1:
+        print(f"seu saldo é de {saldo}")
+    elif opcao == 2:
+        deposito = int(input("quanto quer depositar?"))
+        saldo = saldo + deposito
+        print(f"apos deposito seu saldo é de {saldo}")
+    elif opcao ==3:
+        saque = int(input("quanto quer sacar?"))
+        if saldo < saque:
+            print("saldo isulficiente")
+        else:
+            saldo = saldo - saque
+            print(f"apos saque seu saldo é de {saldo}")
+    elif opcao == 4:
+        print(f"Você depositou {deposito}, Você sacou {saque},seu saldo é de {saldo}")
+    elif opcao == 5:
+        print("programa encerrado")
+    else:
+        print("opção invalida")
+ 
+
+
 
 
     
