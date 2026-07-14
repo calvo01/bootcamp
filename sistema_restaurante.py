@@ -43,7 +43,6 @@ while opcao != 8:
         print("Programa Encerrado")
         
     else:
-        print ("opcao invalida")
-        
+        print ("Opção inválida")
         
   
