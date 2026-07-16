@@ -9,8 +9,8 @@ nomes = []
 valores = []
 
 
-while opcao != 8:
-    opcao = int(input("Selecione uma opção: 1- Novo Pedido, 2- Faturamento, 3- Quantidade de Pedidos, 4- Ticket Médio, 5- Maior Compra, 6- Resumo do Dia, 7-Lista de Compras 8- Encerrar: "))
+while opcao != 9:
+    opcao = int(input("Selecione uma opção: 1- Novo Pedido, 2- Faturamento, 3- Quantidade de Pedidos, 4- Ticket Médio, 5- Maior Compra, 6- Resumo do Dia, 7-Lista de Compras, 8- Encontrar Cliente, 9- Encerrar: "))
     if opcao == 1:
         nome = input("Qual o nome do cliente?")
         nomes.append(nome)
@@ -40,9 +40,16 @@ while opcao != 8:
     elif opcao == 7:
         print(f"Clientes: {nomes}, Valores: {valores}")
     elif opcao == 8:
-        print("Programa Encerrado")
-        
+        busca = input("Qual nome quer buscar?")
+       if busca in nomes:
+          print("Encontrado")
+          for busca in nomes:
+              print(f"{nome} comprou")
+       else:
+            print("Não encontrado")
+    elif opcao == 9:
+        print("Encerrando...")
     else:
-        print ("Opção inválida")
+        print("Opção inválida")
         
   
