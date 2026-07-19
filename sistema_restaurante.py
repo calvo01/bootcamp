@@ -42,12 +42,11 @@ while opcao != 9:
     elif opcao == 8:
         busca = input("Qual nome quer buscar?")
         encontrou = False
-       if busca in nomes:
-          print("Encontrado")
           for indice, nome in enumerate(nomes):
               if nome == busca:
                   encontrou = True
                   print(f"{nome} comprou R${valores[indice]}")
+                  break
         if not encontrou:
                   print("Cliente não encontrado")
             
