@@ -40,15 +40,15 @@ while opcao != 9:
     elif opcao == 6:
         print(f"Faturamento do dia: R${faturamento}, quantidade de pedidos: {realizados}, maior pedido: R${maior_pedido})")
     elif opcao == 7:
-        print(f"Clientes: {nomes}, Valores: {valores}")
+        print(f"Cliente: {cliente['nome']}, Valor: R${cliente['valor']}")
     elif opcao == 8:
         busca = input("Qual nome quer buscar?")
         encontrou = False
-        for indice, nome in enumerate(nomes):
-              if nome == busca:
-                  encontrou = True
-                  print(f"{nome} comprou R${valores[indice]}")
-                  break
+        for cliente in clientes:
+          if cliente['nome'] == busca:
+             encontrou = True
+             print(f"{cliente['nome']} comprou R${cliente['valor']}")
+             break
         if not encontrou:
                   print("Cliente não encontrado")
             
