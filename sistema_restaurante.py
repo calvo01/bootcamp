@@ -11,6 +11,7 @@ clientes = []
 while opcao != 9:
     opcao = int(input("Selecione uma opção: 1- Novo Pedido, 2- Faturamento, 3- Quantidade de Pedidos, 4- Ticket Médio, 5- Maior Compra, 6- Resumo do Dia, 7-Lista de Compras, 8- Encontrar Cliente, 9- Encerrar: "))
     if opcao == 1:
+     for i in range(10):
         nome = input("Qual o nome do cliente?")
         valor = int(input("Qual o valor do pedido?"))
         cliente = {
